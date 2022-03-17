@@ -59,7 +59,7 @@ class AppHistory {
           const options = VueRouter.instance!.options
           const name = index === - 1 ? route.path : route.path.substr(0, index)
 
-          if (options.routes.find((v: any) => v.path === '/' + name)) {
+          if (options!.routes!.find((v: any) => v.path === '/' + name)) {
             path = this.options.host + options.base + path
 
           } else {

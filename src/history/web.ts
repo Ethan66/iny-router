@@ -33,7 +33,7 @@ class WebHistory {
       // 先默认在本项目中寻找，找不到在后续进行
       const name = '/' + route.path
 
-      if (VueRouter.instance!.options.routes.find((v: any) => v.path === name)) {
+      if (VueRouter.instance!.options!.routes!.find((v: any) => v.path === name)) {
         VueRouter.instance!.push(
           {
             path:  name,
