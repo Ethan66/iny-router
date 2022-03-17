@@ -1,5 +1,5 @@
 {
-  "name": "@iny/iny-router",
+  "name": "iny-router",
   "version": "0.0.1",
   "description": "in有内部跳转中心，负责小程序、h5跳转内容",
   "keywords": [],
